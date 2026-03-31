@@ -1,0 +1,244 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: Google Meet BIM Generator API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: bim
+    description: BIM/IFC file generation from meeting notes
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /bim/generate:
+    post:
+      operationId: generateBim
+      tags: [bim]
+      summary: Generate IFC BIM file from meeting notes
+      description: Analyzes meeting notes using AI and generates an IFC file
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GenerateBimRequest"
+      responses:
+        "200":
+          description: Generation started, returns job ID
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GenerateBimResponse"
+        "400":
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /bim/jobs/{jobId}:
+    get:
+      operationId: getBimJob
+      tags: [bim]
+      summary: Get status of a BIM generation job
+      parameters:
+        - in: path
+          name: jobId
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Job status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BimJob"
+        "404":
+          description: Job not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /bim/jobs/{jobId}/download:
+    get:
+      operationId: downloadBimFile
+      tags: [bim]
+      summary: Download the generated IFC file
+      parameters:
+        - in: path
+          name: jobId
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: IFC file download
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+        "404":
+          description: Job not found or file not ready
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /bim/jobs:
+    get:
+      operationId: listBimJobs
+      tags: [bim]
+      summary: List all BIM generation jobs
+      responses:
+        "200":
+          description: List of jobs
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BimJobList"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    GenerateBimRequest:
+      type: object
+      properties:
+        meetingTitle:
+          type: string
+          description: Title or name of the meeting
+        meetingNotes:
+          type: string
+          description: Full meeting notes text to analyze
+        meetingDate:
+          type: string
+          description: Date of the meeting (ISO format)
+      required:
+        - meetingNotes
+
+    GenerateBimResponse:
+      type: object
+      properties:
+        jobId:
+          type: string
+        status:
+          type: string
+          enum: [pending, processing, completed, failed]
+        message:
+          type: string
+      required:
+        - jobId
+        - status
+
+    BimJob:
+      type: object
+      properties:
+        id:
+          type: string
+        meetingTitle:
+          type: string
+        meetingDate:
+          type: string
+        status:
+          type: string
+          enum: [pending, processing, completed, failed]
+        progress:
+          type: number
+          description: Progress percentage 0-100
+        currentStep:
+          type: string
+          description: Current processing step description
+        steps:
+          type: array
+          items:
+            $ref: "#/components/schemas/ProcessingStep"
+        errorMessage:
+          type: string
+        createdAt:
+          type: string
+        completedAt:
+          type: string
+        fileSize:
+          type: number
+          description: Size of generated IFC file in bytes
+        extractedElements:
+          type: object
+          description: Summary of extracted BIM elements
+          properties:
+            spaces:
+              type: number
+            walls:
+              type: number
+            doors:
+              type: number
+            windows:
+              type: number
+            columns:
+              type: number
+            beams:
+              type: number
+            slabs:
+              type: number
+      required:
+        - id
+        - status
+        - createdAt
+
+    ProcessingStep:
+      type: object
+      properties:
+        name:
+          type: string
+        status:
+          type: string
+          enum: [pending, active, completed, failed]
+        description:
+          type: string
+      required:
+        - name
+        - status
+
+    BimJobList:
+      type: object
+      properties:
+        jobs:
+          type: array
+          items:
+            $ref: "#/components/schemas/BimJob"
+      required:
+        - jobs
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+      required:
+        - error

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Google Meet BIM Generator"
+version = "1.0.0"
+id = "artifacts/gmeet-bim"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18790
+
+[services.development]
+run = "pnpm --filter @workspace/gmeet-bim run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/gmeet-bim", "run", "build" ]
+publicDir = "artifacts/gmeet-bim/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18790"
+BASE_PATH = "/"
