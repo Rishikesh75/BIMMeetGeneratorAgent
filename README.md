@@ -126,6 +126,18 @@ See `lib/api-spec/openapi.yaml` for the full contract.
 
 Database schema changes use Drizzle in `lib/db`; see that package’s scripts for push/migrate workflows in your environment.
 
+### Docker (Postgres + API + UI)
+
+Use the same layout locally or on a VM with [Docker Compose](https://docs.docker.com/compose/):
+
+1. Copy **`.env.example`** to **`.env`** and set **`AI_INTEGRATIONS_OPENAI_API_KEY`** and **`AI_INTEGRATIONS_OPENAI_BASE_URL`** (and optionally **`POSTGRES_PASSWORD`**).
+2. From the repo root: **`docker compose up --build`**
+3. Open **`http://localhost:3000`** — the UI is served by nginx and **`/api`** is proxied to the API container, so the browser uses same-origin requests.
+
+**Postgres only** (run API/UI on the host with `pnpm`): **`docker compose up -d db`**, then point **`DATABASE_URL`** at `postgresql://bim:YOUR_PASSWORD@localhost:5432/bim` and run **`pnpm --filter @workspace/db run push`** before starting the API.
+
+On a server, open the host firewall for the **`WEB_PORT`** you map (default **3000**), or set **`WEB_PORT=80`** in `.env` if you bind to port 80.
+
 ---
 
 ## License

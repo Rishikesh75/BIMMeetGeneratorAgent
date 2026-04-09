@@ -1,0 +1,56 @@
+# Full stack: Postgres + API + static UI (nginx proxies /api to the API container).
+# Usage:
+#   cp .env.example .env   # then set secrets
+#   docker compose up --build
+# Postgres only (local API/UI on host):
+#   docker compose up -d db
+#   Set DATABASE_URL=postgresql://bim:YOUR_PASS@localhost:5432/bim
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bim
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-bimpass}
+      POSTGRES_DB: bim
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bim -d bim"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: api
+    restart: unless-stopped
+    environment:
+      PORT: "8080"
+      DATABASE_URL: postgresql://bim:${POSTGRES_PASSWORD:-bimpass}@db:5432/bim
+      AI_INTEGRATIONS_OPENAI_API_KEY: ${AI_INTEGRATIONS_OPENAI_API_KEY}
+      AI_INTEGRATIONS_OPENAI_BASE_URL: ${AI_INTEGRATIONS_OPENAI_BASE_URL}
+    depends_on:
+      db:
+        condition: service_healthy
+    expose:
+      - "8080"
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: web
+    restart: unless-stopped
+    ports:
+      - "${WEB_PORT:-3000}:80"
+    depends_on:
+      - api
+
+volumes:
+  postgres_data:
