@@ -1,5 +1,9 @@
 import { openai } from "@workspace/integrations-openai-ai-server";
 
+/** Gemini (or any OpenAI-compatible API) model id for BIM JSON extraction. */
+const BIM_EXTRACTION_MODEL =
+  process.env.BIM_EXTRACTION_MODEL?.trim() || "gemini-2.5-flash";
+
 export interface ExtractedBimElements {
   spaces: BimSpace[];
   walls: BimWall[];
@@ -88,8 +92,8 @@ Extract the following information and return it as valid JSON matching this exac
 Return ONLY the JSON, no markdown, no explanation.`;
 
   const response = await openai.chat.completions.create({
-    model: "gpt-5.2",
-    max_completion_tokens: 4096,
+    model: BIM_EXTRACTION_MODEL,
+    max_completion_tokens: 8192,
     messages: [
       {
         role: "user",

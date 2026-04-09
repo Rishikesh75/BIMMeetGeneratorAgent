@@ -36,7 +36,7 @@ flowchart LR
   end
   subgraph api [API server]
     Routes[Express BIM routes]
-    LLM[OpenAI extraction]
+    LLM[Gemini extraction]
     IFC[IFC text generation]
   end
   subgraph data [Persistence]
@@ -60,7 +60,7 @@ flowchart LR
 | **`lib/api-zod`** | Zod schemas generated from the spec (validation on the server). |
 | **`lib/api-client-react`** | Generated React Query hooks + fetch client for the frontend. |
 | **`lib/db`** | Drizzle ORM + PostgreSQL; `bim_jobs` stores notes, status, progress, steps, extracted element counts, and generated IFC content. |
-| **`lib/integrations-openai-ai-server`** | Server-side OpenAI client used for structured extraction from notes. |
+| **`lib/integrations-openai-ai-server`** | OpenAI-compatible HTTP client ([Gemini OpenAI API](https://ai.google.dev/gemini-api/docs/openai) by default) for structured extraction from notes. Configure `AI_INTEGRATIONS_OPENAI_*` and optional `BIM_EXTRACTION_MODEL`. |
 
 ### BIM job pipeline (server)
 
@@ -114,6 +114,7 @@ See `lib/api-spec/openapi.yaml` for the full contract.
 - **Data**: PostgreSQL, **Drizzle ORM**  
 - **Frontend**: React, Vite, TanStack Query, Tailwind/shadcn-style UI  
 - **Contract**: OpenAPI → Orval → shared Zod + React client  
+- **LLM**: **Google Gemini** via the [OpenAI-compatible endpoint](https://ai.google.dev/gemini-api/docs/openai) (API key from [Google AI Studio](https://aistudio.google.com/apikey)); override **`BIM_EXTRACTION_MODEL`** or point **`AI_INTEGRATIONS_OPENAI_BASE_URL`** at OpenAI if you prefer.
 
 ---
 
@@ -130,7 +131,7 @@ Database schema changes use Drizzle in `lib/db`; see that package’s scripts fo
 
 Use the same layout locally or on a VM with [Docker Compose](https://docs.docker.com/compose/):
 
-1. Copy **`.env.example`** to **`.env`** and set **`AI_INTEGRATIONS_OPENAI_API_KEY`** and **`AI_INTEGRATIONS_OPENAI_BASE_URL`** (and optionally **`POSTGRES_PASSWORD`**).
+1. Copy **`.env.example`** to **`.env`**. Set a **Gemini API key** and base URL (defaults in **`.env.example`**), or use another OpenAI-compatible provider. Optionally set **`BIM_EXTRACTION_MODEL`**, **`POSTGRES_PASSWORD`**, etc.
 2. From the repo root: **`docker compose up --build`**
 3. Open **`http://localhost:3000`** — the UI is served by nginx and **`/api`** is proxied to the API container, so the browser uses same-origin requests.
 

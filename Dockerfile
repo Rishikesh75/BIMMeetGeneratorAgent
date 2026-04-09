@@ -7,6 +7,7 @@ WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@9 --activate
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml tsconfig.base.json ./
+COPY .npmrc ./
 COPY scripts ./scripts
 COPY artifacts ./artifacts
 COPY lib ./lib
@@ -23,6 +24,7 @@ WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@9 --activate
 
 COPY --from=builder /app/package.json /app/pnpm-lock.yaml /app/pnpm-workspace.yaml /app/tsconfig.base.json ./
+COPY --from=builder /app/.npmrc ./.npmrc
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/artifacts ./artifacts
 COPY --from=builder /app/lib ./lib

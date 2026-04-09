@@ -35,6 +35,7 @@ services:
       DATABASE_URL: postgresql://bim:${POSTGRES_PASSWORD:-bimpass}@db:5432/bim
       AI_INTEGRATIONS_OPENAI_API_KEY: ${AI_INTEGRATIONS_OPENAI_API_KEY}
       AI_INTEGRATIONS_OPENAI_BASE_URL: ${AI_INTEGRATIONS_OPENAI_BASE_URL}
+      BIM_EXTRACTION_MODEL: ${BIM_EXTRACTION_MODEL:-gemini-2.5-flash}
     depends_on:
       db:
         condition: service_healthy
