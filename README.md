@@ -140,6 +140,3 @@ On a server, open the host firewall for the **`WEB_PORT`** you map (default **30
 
 ---
 
-## License
-
-MIT (see root `package.json`).
