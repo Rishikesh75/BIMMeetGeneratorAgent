@@ -1,10 +1,11 @@
 {
-  "name": "@workspace/integrations-openai-ai-server",
+  "name": "@workspace/integrations-gemini-server",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
+    "./generate-content": "./src/generate-content.ts",
     "./batch": "./src/batch/index.ts",
     "./image": "./src/image/index.ts",
     "./audio": "./src/audio/index.ts"

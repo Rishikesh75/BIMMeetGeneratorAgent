@@ -60,7 +60,7 @@ flowchart LR
 | **`lib/api-zod`** | Zod schemas generated from the spec (validation on the server). |
 | **`lib/api-client-react`** | Generated React Query hooks + fetch client for the frontend. |
 | **`lib/db`** | Drizzle ORM + PostgreSQL; `bim_jobs` stores notes, status, progress, steps, extracted element counts, and generated IFC content. |
-| **`lib/integrations-openai-ai-server`** | OpenAI-compatible HTTP client ([Gemini OpenAI API](https://ai.google.dev/gemini-api/docs/openai) by default) for structured extraction from notes. Configure `AI_INTEGRATIONS_OPENAI_*` and optional `BIM_EXTRACTION_MODEL`. |
+| **`lib/integrations-openai-ai-server`** (package **`@workspace/integrations-gemini-server`**) | **Google Gemini** via the [OpenAI-compatible HTTP API](https://ai.google.dev/gemini-api/docs/openai). Set **`GEMINI_API_KEY`**, **`GEMINI_BASE_URL`**, and optional **`BIM_EXTRACTION_MODEL`**. |
 
 ### BIM job pipeline (server)
 
@@ -85,7 +85,7 @@ The client polls **`GET /api/bim/jobs/:jobId`** (or lists jobs) until completion
 │   ├── api-zod/             # Generated Zod schemas
 │   ├── api-client-react/    # Generated hooks + client
 │   ├── db/                  # Drizzle schema, DB connection
-│   └── integrations*/       # OpenAI and related integrations
+│   └── integrations*/       # Gemini client (`@workspace/integrations-gemini-server`) and related
 ├── scripts/                 # Workspace utility scripts
 ├── pnpm-workspace.yaml
 └── package.json             # Root scripts (build, typecheck)
@@ -114,7 +114,7 @@ See `lib/api-spec/openapi.yaml` for the full contract.
 - **Data**: PostgreSQL, **Drizzle ORM**  
 - **Frontend**: React, Vite, TanStack Query, Tailwind/shadcn-style UI  
 - **Contract**: OpenAPI → Orval → shared Zod + React client  
-- **LLM**: **Google Gemini** via the [OpenAI-compatible endpoint](https://ai.google.dev/gemini-api/docs/openai) (API key from [Google AI Studio](https://aistudio.google.com/apikey)); override **`BIM_EXTRACTION_MODEL`** or point **`AI_INTEGRATIONS_OPENAI_BASE_URL`** at OpenAI if you prefer.
+- **LLM**: **Google Gemini** only — [OpenAI-compatible endpoint](https://ai.google.dev/gemini-api/docs/openai), keys from [Google AI Studio](https://aistudio.google.com/apikey). Env: **`GEMINI_API_KEY`**, **`GEMINI_BASE_URL`**, optional **`BIM_EXTRACTION_MODEL`**.
 
 ---
 
@@ -131,7 +131,7 @@ Database schema changes use Drizzle in `lib/db`; see that package’s scripts fo
 
 Use the same layout locally or on a VM with [Docker Compose](https://docs.docker.com/compose/):
 
-1. Copy **`.env.example`** to **`.env`**. Set a **Gemini API key** and base URL (defaults in **`.env.example`**), or use another OpenAI-compatible provider. Optionally set **`BIM_EXTRACTION_MODEL`**, **`POSTGRES_PASSWORD`**, etc.
+1. Copy **`.env.example`** to **`.env`**. Set **`GEMINI_API_KEY`** and **`GEMINI_BASE_URL`** (defaults target Google’s Gemini API). Optionally **`BIM_EXTRACTION_MODEL`**, **`POSTGRES_PASSWORD`**, **`WEB_PORT`**, **`API_PORT`**, etc.
 2. From the repo root: **`docker compose up --build`**
 3. Open **`http://localhost:3000`** (or **`WEB_PORT`**) — nginx serves the UI and proxies **`/api`** to the API container.
 4. The API is also bound on the host at **`http://localhost:8080`** by default (override with **`API_PORT`** in `.env`), e.g. **`http://localhost:8080/api/healthz`**. Express already enables **CORS** for direct calls from other origins.

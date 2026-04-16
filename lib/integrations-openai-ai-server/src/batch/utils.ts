@@ -9,14 +9,14 @@ import pRetry from "p-retry";
  *
  * USAGE:
  * ```typescript
- * import { batchProcess } from "@workspace/integrations-openai-ai-server/batch";
- * import { openai } from "@workspace/integrations-openai-ai-server";
+ * import { batchProcess } from "@workspace/integrations-gemini-server/batch";
+ * import { gemini } from "@workspace/integrations-gemini-server";
  *
  * const results = await batchProcess(
  *   artworks,
  *   async (artwork) => {
- *     const response = await openai.chat.completions.create({
- *       model: "gpt-5.2",
+ *     const response = await gemini.chat.completions.create({
+ *       model: "gemini-2.5-flash",
  *       messages: [{ role: "user", content: `Categorize: ${artwork.name}` }],
  *       response_format: { type: "json_object" },
  *     });

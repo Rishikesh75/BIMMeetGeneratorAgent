@@ -1,8 +1,8 @@
-import { openai } from "@workspace/integrations-openai-ai-server";
+import { generateContentText } from "@workspace/integrations-gemini-server";
 
-/** Gemini (or any OpenAI-compatible API) model id for BIM JSON extraction. */
+/** Gemini model id for native `generateContent` (see https://ai.google.dev/gemini-api/docs/models ). */
 const BIM_EXTRACTION_MODEL =
-  process.env.BIM_EXTRACTION_MODEL?.trim() || "gemini-2.5-flash";
+  process.env.BIM_EXTRACTION_MODEL?.trim() || "gemini-flash-latest";
 
 export interface ExtractedBimElements {
   spaces: BimSpace[];
@@ -91,19 +91,33 @@ Extract the following information and return it as valid JSON matching this exac
 
 Return ONLY the JSON, no markdown, no explanation.`;
 
-  const response = await openai.chat.completions.create({
-    model: BIM_EXTRACTION_MODEL,
-    max_completion_tokens: 8192,
-    messages: [
-      {
-        role: "user",
-        content: prompt,
-      },
-    ],
-  });
+  let content: string;
+  try {
+    const raw = await generateContentText(prompt, {
+      model: BIM_EXTRACTION_MODEL,
+      maxOutputTokens: 8192,
+    });
+    content = raw.trim() || "{}";
+  } catch (err: unknown) {
+    const e = err as { status?: number; message?: string; error?: unknown };
+    const msg = e?.message ?? String(err);
+    const statusMatch = /\(HTTP (\d+)\)/.exec(msg);
+    const status = e?.status ?? (statusMatch ? Number(statusMatch[1]) : undefined);
+    const detail =
+      e?.error !== undefined ? ` ${JSON.stringify(e.error)}` : "";
+    const hint403 =
+      status === 403
+        ? " Common causes: API key invalid/revoked; key restricted (use “Generative Language API” or no restriction in Google Cloud → Credentials); or enable the Generative Language API for the project. Create keys in Google AI Studio: https://aistudio.google.com/apikey"
+        : "";
+    const hint400 =
+      status === 400
+        ? " Often: wrong model id for native generateContent (try BIM_EXTRACTION_MODEL=gemini-flash-latest or another id from https://ai.google.dev/gemini-api/docs/models), or invalid request body."
+        : "";
+    throw new Error(
+      `Gemini request failed${status != null ? ` (HTTP ${status})` : ""}: ${msg}.${detail}${hint403}${hint400}`,
+    );
+  }
 
-  const content = response.choices[0]?.message?.content ?? "{}";
-  
   try {
     const parsed = JSON.parse(content);
     return {
