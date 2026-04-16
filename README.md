@@ -133,11 +133,12 @@ Use the same layout locally or on a VM with [Docker Compose](https://docs.docker
 
 1. Copy **`.env.example`** to **`.env`**. Set a **Gemini API key** and base URL (defaults in **`.env.example`**), or use another OpenAI-compatible provider. Optionally set **`BIM_EXTRACTION_MODEL`**, **`POSTGRES_PASSWORD`**, etc.
 2. From the repo root: **`docker compose up --build`**
-3. Open **`http://localhost:3000`** — the UI is served by nginx and **`/api`** is proxied to the API container, so the browser uses same-origin requests.
+3. Open **`http://localhost:3000`** (or **`WEB_PORT`**) — nginx serves the UI and proxies **`/api`** to the API container.
+4. The API is also bound on the host at **`http://localhost:8080`** by default (override with **`API_PORT`** in `.env`), e.g. **`http://localhost:8080/api/healthz`**. Express already enables **CORS** for direct calls from other origins.
 
 **Postgres only** (run API/UI on the host with `pnpm`): **`docker compose up -d db`**, then point **`DATABASE_URL`** at `postgresql://bim:YOUR_PASSWORD@localhost:5432/bim` and run **`pnpm --filter @workspace/db run push`** before starting the API.
 
-On a server, open the host firewall for the **`WEB_PORT`** you map (default **3000**), or set **`WEB_PORT=80`** in `.env` if you bind to port 80.
+On a server, open the host firewall for **`WEB_PORT`** and **`API_PORT`** as needed, or set **`WEB_PORT=80`** in `.env` if you bind the UI to port 80.
 
 ---
 

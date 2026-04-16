@@ -1,4 +1,6 @@
-# Full stack: Postgres + API + static UI (nginx proxies /api to the API container).
+# Full stack: Postgres + API + static UI.
+# - web: UI at http://localhost:${WEB_PORT:-3000} and /api proxied to the API container.
+# - api: also published at http://localhost:${API_PORT:-8080} so you can open backend routes directly (e.g. /api/healthz).
 # Usage:
 #   cp .env.example .env   # then set secrets
 #   docker compose up --build
@@ -39,8 +41,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    expose:
-      - "8080"
+    ports:
+      - "${API_PORT:-8080}:8080"
 
   web:
     build:

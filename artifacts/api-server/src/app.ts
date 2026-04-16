@@ -29,6 +29,13 @@ app.use(cors());
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
+app.get("/", (_req, res) => {
+  res.type("application/json").send({
+    service: "BIM Meet Generator API",
+    docs: "All routes are under /api — try GET /api/healthz",
+  });
+});
+
 app.use("/api", router);
 
 export default app;
