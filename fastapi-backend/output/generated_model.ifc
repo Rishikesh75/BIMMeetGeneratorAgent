@@ -1,0 +1,17 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('Generated IFC model from text description'),'2;1');
+FILE_NAME('A small office building with walls and beams','2026-07-07T00:00:00',('BIM Agent'),('BIMMeetGeneratorAgent'),'1.0','1.0','');
+FILE_SCHEMA(('IFC4'));
+ENDSEC;
+DATA;
+#1=IFCPROJECT('0xPROJECT', $ , 'A small office building with walls and beams', $, $, $, $, (#2), #3);
+#2=IFCSITE('0xSITE', $, 'Site', $, $, $, $, $, $);
+#3=IFCUNITASSIGNMENT((#4,#5));
+#4=IFCLENGTHMEASURE(1.0);
+#5=IFCCONVERSIONBASEDUNIT($, #6, 'METRE', 'M');
+#6=IFCDIMENSIONALEXPONENTS(1,0,0,0,0,0,0);
+#7=IFCWALL('0xWALL', $, 'Main Wall', $, $, $, $, $, .ELEMENT.);
+#8=IFCRELAGGREGATES('0xREL', $, $, #1, (#2));
+ENDSEC;
+END-ISO-10303-21;
