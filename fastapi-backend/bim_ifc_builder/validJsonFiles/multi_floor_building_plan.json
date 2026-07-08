@@ -1,0 +1,42 @@
+{
+  "name": "Multi-Floor Example",
+  "building_type": "residential",
+  "floors": 2,
+  "elements": [
+    {
+      "type": "wall",
+      "name": "North Wall",
+      "floor": 1,
+      "length_m": 15.0,
+      "height_m": 3.0,
+      "thickness_m": 0.25,
+      "position": { "x": 0.0, "y": 0.0, "z": 0.0 }
+    },
+    {
+      "type": "window",
+      "name": "Front Window",
+      "floor": 1,
+      "length_m": 1.5,
+      "height_m": 1.2,
+      "position": { "x": 3.0, "y": 0.0, "z": 1.0 }
+    },
+    {
+      "type": "column",
+      "name": "Corner Column",
+      "floor": 2,
+      "width_m": 0.3,
+      "depth_m": 0.3,
+      "height_m": 3.0,
+      "position": { "x": 0.0, "y": 0.0, "z": 3.0 }
+    },
+    {
+      "type": "slab",
+      "name": "Second Floor Slab",
+      "floor": 2,
+      "length_m": 15.0,
+      "width_m": 8.0,
+      "depth_m": 0.2,
+      "position": { "x": 0.0, "y": 0.0, "z": 3.0 }
+    }
+  ]
+}
