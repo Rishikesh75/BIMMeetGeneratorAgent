@@ -1,0 +1,13 @@
+.venv-training/
+
+# Generated fine-tuning outputs (regenerate via notebook)
+NoteBooks/artifacts/
+NoteBooks/processed/
+
+# Python / training binaries
+**/__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.safetensors
+*.bin

@@ -1,0 +1,193 @@
+{
+  "project": {
+    "id": "",
+    "name": "",
+    "description": ""
+  },
+
+  "site": {
+    "id": "",
+    "name": "",
+    "location": "",
+    "latitude": null,
+    "longitude": null
+  },
+
+  "building": {
+    "id": "",
+    "name": "",
+    "storeys": []
+  },
+
+  "storeys": [
+    {
+      "id": "",
+      "name": "",
+      "elevation": 0,
+      "height": 0
+    }
+  ],
+
+  "elements": {
+    "walls": [
+      {
+        "id": "",
+        "name": "",
+        "storey": "",
+        "material": "",
+        "geometry": {
+          "start": [0, 0, 0],
+          "end": [0, 0, 0],
+          "height": 0,
+          "thickness": 0
+        }
+      }
+    ],
+
+    "slabs": [
+      {
+        "id": "",
+        "name": "",
+        "storey": "",
+        "material": "",
+        "outline": [
+          [0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0]
+        ],
+        "thickness": 0
+      }
+    ],
+
+    "columns": [
+      {
+        "id": "",
+        "name": "",
+        "storey": "",
+        "material": "",
+        "position": [0, 0, 0],
+        "width": 0,
+        "depth": 0,
+        "height": 0
+      }
+    ],
+
+    "beams": [
+      {
+        "id": "",
+        "name": "",
+        "storey": "",
+        "material": "",
+        "start": [0, 0, 0],
+        "end": [0, 0, 0],
+        "width": 0,
+        "height": 0
+      }
+    ],
+
+    "doors": [
+      {
+        "id": "",
+        "name": "",
+        "storey": "",
+        "host_wall": "",
+        "material": "",
+        "width": 0,
+        "height": 0,
+        "offset": 0,
+        "sill_height": 0
+      }
+    ],
+
+    "windows": [
+      {
+        "id": "",
+        "name": "",
+        "storey": "",
+        "host_wall": "",
+        "material": "",
+        "width": 0,
+        "height": 0,
+        "offset": 0,
+        "sill_height": 0
+      }
+    ],
+
+    "roofs": [
+      {
+        "id": "",
+        "name": "",
+        "storey": "",
+        "material": "",
+        "outline": [
+          [0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0]
+        ],
+        "thickness": 0,
+        "slope_deg": 0
+      }
+    ],
+
+    "stairs": [
+      {
+        "id": "",
+        "name": "",
+        "from_storey": "",
+        "to_storey": "",
+        "material": "",
+        "geometry": {
+          "start": [0, 0, 0],
+          "end": [0, 0, 0],
+          "width": 0,
+          "riser_height": 0,
+          "tread_depth": 0
+        }
+      }
+    ],
+
+    "spaces": [
+      {
+        "id": "",
+        "name": "",
+        "storey": "",
+        "usage": "",
+        "outline": [
+          [0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0],
+          [0, 0, 0]
+        ],
+        "height": 0
+      }
+    ]
+  },
+
+  "materials": [
+    {
+      "id": "",
+      "name": "",
+      "category": "",
+      "density_kg_m3": 0,
+      "color": ""
+    }
+  ],
+
+  "relationships": [
+    {
+      "id": "",
+      "type": "",
+      "from": "",
+      "to": ""
+    }
+  ],
+
+  "metadata": {
+    "units": "meters",
+    "coordinate_system": "right_handed_z_up",
+    "schema_version": "1.0",
+    "note": "Future hierarchical IFC-style design draft. Not accepted by the current BuildingPlan API."
+  }
+}

@@ -108,6 +108,14 @@ uvicorn app.main:app --reload
 
 The folder `fastapi-backend/bim_ifc_builder/validJsonFiles/` contains example payloads you can use to test IFC generation.
 
+## LLM fine-tuning
+
+The [`training/`](training/) package provides a CPU-compatible LoRA workflow for
+fine-tuning `HuggingFaceTB/SmolLM2-360M-Instruct` on the 500 hierarchical BIM
+examples under [`datasets/`](datasets/). Prefer the notebook
+[`training/BIM_LLM_Fine_Tuning.ipynb`](training/BIM_LLM_Fine_Tuning.ipynb).
+See [`training/README.md`](training/README.md) for setup details.
+
 ## Notes
 
 - Output is written to `fastapi-backend/output/generated_model.ifc`.
