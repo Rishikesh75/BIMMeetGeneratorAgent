@@ -1,4 +1,5 @@
 .venv-training/
+.env
 
 # Generated fine-tuning outputs (regenerate via notebook)
 NoteBooks/artifacts/
