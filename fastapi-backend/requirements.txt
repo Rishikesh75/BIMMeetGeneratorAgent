@@ -22,3 +22,8 @@ uvicorn==0.50.2
 torch
 transformers
 peft
+
+# Document -> Gemini -> CityJSON -> IFC pipeline (app/routers/doc.py)
+google-genai
+pypdf
+python-dotenv

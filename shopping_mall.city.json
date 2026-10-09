@@ -1,0 +1,6228 @@
+{
+  "type": "CityJSON",
+  "version": "1.1",
+  "metadata": {
+    "title": "CITY CENTER MALL",
+    "presentLoD": "2.0"
+  },
+  "transform": {
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "translate": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "CityObjects": {
+    "Building1": {
+      "type": "Building",
+      "attributes": {
+        "name": "CITY CENTER MALL",
+        "building_type": "commercial"
+      },
+      "children": [
+        "Basement_Slab_1",
+        "Column_B_1",
+        "Column_B_2",
+        "Column_B_3",
+        "Column_B_4",
+        "Column_B_5",
+        "Column_B_6",
+        "Column_B_7",
+        "Column_B_8",
+        "Column_B_9",
+        "Column_B_10",
+        "Column_B_11",
+        "Column_B_12",
+        "Column_B_13",
+        "Column_B_14",
+        "Column_B_15",
+        "Column_B_16",
+        "Column_B_17",
+        "Column_B_18",
+        "Column_B_19",
+        "Column_B_20",
+        "Column_B_21",
+        "Column_B_22",
+        "Column_B_23",
+        "Column_B_24",
+        "Parking_Access_Ramp_1",
+        "Ground_Slab_1",
+        "Exterior_Wall_1",
+        "Exterior_Wall_2",
+        "Exterior_Wall_3",
+        "Front_Curtain_Wall_1",
+        "Main_Door_1",
+        "Main_Door_2",
+        "Lobby_Corridor_1",
+        "Retail_Unit_1",
+        "Retail_Unit_2",
+        "Retail_Unit_3",
+        "Retail_Unit_4",
+        "Retail_Unit_5",
+        "Retail_Unit_6",
+        "Retail_Unit_7",
+        "Retail_Unit_8",
+        "Retail_Unit_9",
+        "Retail_Unit_10",
+        "Retail_Unit_11",
+        "Retail_Unit_12",
+        "Retail_Door_1",
+        "Retail_Door_2",
+        "Retail_Door_3",
+        "Retail_Door_4",
+        "Retail_Door_5",
+        "Retail_Door_6",
+        "Retail_Door_7",
+        "Retail_Door_8",
+        "Retail_Door_9",
+        "Retail_Door_10",
+        "Retail_Door_11",
+        "Retail_Door_12",
+        "Loading_Bay_1",
+        "Staff_Door_1",
+        "Restroom_G_1",
+        "Restroom_G_2",
+        "Restroom_G_3",
+        "Escalator_1",
+        "Escalator_2",
+        "Elevator_1",
+        "Elevator_2",
+        "Second_Floor_Slab_1",
+        "Food_Court_Dining_1",
+        "Food_Stall_1",
+        "Food_Stall_2",
+        "Food_Stall_3",
+        "Food_Stall_4",
+        "Food_Stall_5",
+        "Food_Stall_6",
+        "Food_Stall_7",
+        "Food_Stall_8",
+        "Children_Play_Area_1",
+        "Restroom_2F_1",
+        "Restroom_2F_2",
+        "Restroom_2F_3",
+        "Third_Floor_Slab_1",
+        "Cinema_Auditorium_1",
+        "Cinema_Auditorium_2",
+        "Cinema_Auditorium_3",
+        "Cinema_Auditorium_4",
+        "Cinema_Foyer_1",
+        "Restroom_3F_1",
+        "Restroom_3F_2",
+        "Restroom_3F_3",
+        "Flat_Roof_Slab_1",
+        "Atrium_Skylight_1",
+        "Drop_Off_Canopy_1"
+      ]
+    },
+    "Basement_Slab_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Basement Parking Slab",
+        "element_type": "slab",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          60.96,
+          36.58,
+          0.3
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            0
+          ],
+          "transformationMatrix": [
+            60.96,
+            0,
+            0,
+            0,
+            0,
+            36.58,
+            0,
+            0,
+            0,
+            0,
+            0.3,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            1
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            2
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            3
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_4": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            4
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_5": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            5
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_6": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            6
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_7": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            7
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_8": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            8
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_9": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            9
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_10": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            10
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_11": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            11
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_12": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            12
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_13": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            13
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_14": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            14
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_15": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            15
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_16": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            16
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_17": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            17
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_18": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            18
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_19": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            19
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_20": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            20
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_21": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            21
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_22": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            22
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_23": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            23
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Column_B_24": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Structural Columns",
+        "element_type": "column",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          0.6,
+          0.6,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            24
+          ],
+          "transformationMatrix": [
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            0.6,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Parking_Access_Ramp_1": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Parking Access Ramp",
+        "element_type": "other",
+        "storey": "Basement Parking",
+        "dimensions_m": [
+          25.0,
+          6.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 2,
+          "boundaries": [
+            25
+          ],
+          "transformationMatrix": [
+            25.0,
+            0,
+            0,
+            0,
+            0,
+            6.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Ground_Slab_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Ground Floor Slab",
+        "element_type": "slab",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          60.96,
+          36.58,
+          0.3
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            26
+          ],
+          "transformationMatrix": [
+            60.96,
+            0,
+            0,
+            0,
+            0,
+            36.58,
+            0,
+            0,
+            0,
+            0,
+            0.3,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Exterior_Wall_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Concrete Side and Rear Walls",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          60.96,
+          0.3,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            27
+          ],
+          "transformationMatrix": [
+            60.96,
+            0,
+            0,
+            0,
+            0,
+            0.3,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Exterior_Wall_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Concrete Side and Rear Walls",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          36.58,
+          0.3,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            28
+          ],
+          "transformationMatrix": [
+            0,
+            -0.3,
+            0,
+            0,
+            36.58,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Exterior_Wall_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Concrete Side and Rear Walls",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          36.58,
+          0.3,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            29
+          ],
+          "transformationMatrix": [
+            0,
+            -0.3,
+            0,
+            0,
+            36.58,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Front_Curtain_Wall_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Front Glazed Curtain Wall",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          36.58,
+          0.15,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            30
+          ],
+          "transformationMatrix": [
+            36.58,
+            0,
+            0,
+            0,
+            0,
+            0.15,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Main_Door_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Main Entrance Sliding Glass Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          3.0,
+          0.1,
+          2.8
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            31
+          ],
+          "transformationMatrix": [
+            3.0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            2.8,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Main_Door_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Main Entrance Sliding Glass Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          3.0,
+          0.1,
+          2.8
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            32
+          ],
+          "transformationMatrix": [
+            3.0,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            2.8,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Lobby_Corridor_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Main Entrance Lobby and Central Corridor",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          50.0,
+          12.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            33
+          ],
+          "transformationMatrix": [
+            50.0,
+            0,
+            0,
+            0,
+            0,
+            12.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            34
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            35
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            36
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_4": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            37
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_5": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            38
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_6": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            39
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_7": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            40
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_8": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            41
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_9": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            42
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_10": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            43
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_11": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            44
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Unit_12": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Units",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          8.0,
+          10.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            45
+          ],
+          "transformationMatrix": [
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            46
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            47
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            48
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_4": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            49
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_5": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            50
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_6": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            51
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_7": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            52
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_8": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            53
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_9": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            54
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_10": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            55
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_11": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            56
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Retail_Door_12": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Retail Store Entrance Doors",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.08,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            57
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.08,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Loading_Bay_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Loading and Delivery Bay",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          12.0,
+          8.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            58
+          ],
+          "transformationMatrix": [
+            12.0,
+            0,
+            0,
+            0,
+            0,
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Staff_Door_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Staff Service Entrance Door",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.2,
+          0.1,
+          2.4
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            59
+          ],
+          "transformationMatrix": [
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            0.1,
+            0,
+            0,
+            0,
+            0,
+            2.4,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_G_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Ground Floor Restrooms",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            60
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_G_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Ground Floor Restrooms",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            61
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_G_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Ground Floor Restrooms",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            62
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Escalator_1": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Central Atrium Escalators",
+        "element_type": "stair",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          10.0,
+          1.2,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 2,
+          "boundaries": [
+            63
+          ],
+          "transformationMatrix": [
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  6,
+                  6,
+                  6,
+                  6,
+                  6
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Escalator_2": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Central Atrium Escalators",
+        "element_type": "stair",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          10.0,
+          1.2,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 2,
+          "boundaries": [
+            64
+          ],
+          "transformationMatrix": [
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            1.2,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  6,
+                  6,
+                  6,
+                  6,
+                  6
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Elevator_1": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Passenger Elevators",
+        "element_type": "other",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          2.5,
+          2.5,
+          13.72
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            65
+          ],
+          "transformationMatrix": [
+            2.5,
+            0,
+            0,
+            0,
+            0,
+            2.5,
+            0,
+            0,
+            0,
+            0,
+            13.72,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Elevator_2": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Passenger Elevators",
+        "element_type": "other",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          2.5,
+          2.5,
+          13.72
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            66
+          ],
+          "transformationMatrix": [
+            2.5,
+            0,
+            0,
+            0,
+            0,
+            2.5,
+            0,
+            0,
+            0,
+            0,
+            13.72,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Second_Floor_Slab_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Second Floor Intermediate Slab",
+        "element_type": "slab",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          60.96,
+          36.58,
+          0.3
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            67
+          ],
+          "transformationMatrix": [
+            60.96,
+            0,
+            0,
+            0,
+            0,
+            36.58,
+            0,
+            0,
+            0,
+            0,
+            0.3,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Court_Dining_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Court Dining Area",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          35.0,
+          20.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            68
+          ],
+          "transformationMatrix": [
+            35.0,
+            0,
+            0,
+            0,
+            0,
+            20.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Stall_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Stalls",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            69
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Stall_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Stalls",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            70
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Stall_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Stalls",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            71
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Stall_4": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Stalls",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            72
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Stall_5": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Stalls",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            73
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Stall_6": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Stalls",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            74
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Stall_7": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Stalls",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            75
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Food_Stall_8": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Food Stalls",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            76
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Children_Play_Area_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Children Play Area",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          10.0,
+          8.0,
+          2.0
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            77
+          ],
+          "transformationMatrix": [
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            2.0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_2F_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Second Floor Restrooms",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            78
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_2F_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Second Floor Restrooms",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            79
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_2F_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Second Floor Restrooms",
+        "element_type": "room",
+        "storey": "Second Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            80
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Third_Floor_Slab_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Third Floor Intermediate Slab",
+        "element_type": "slab",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          60.96,
+          36.58,
+          0.3
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            81
+          ],
+          "transformationMatrix": [
+            60.96,
+            0,
+            0,
+            0,
+            0,
+            36.58,
+            0,
+            0,
+            0,
+            0,
+            0.3,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Cinema_Auditorium_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Cinema Auditoriums",
+        "element_type": "room",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          18.0,
+          12.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            82
+          ],
+          "transformationMatrix": [
+            18.0,
+            0,
+            0,
+            0,
+            0,
+            12.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Cinema_Auditorium_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Cinema Auditoriums",
+        "element_type": "room",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          18.0,
+          12.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            83
+          ],
+          "transformationMatrix": [
+            18.0,
+            0,
+            0,
+            0,
+            0,
+            12.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Cinema_Auditorium_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Cinema Auditoriums",
+        "element_type": "room",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          18.0,
+          12.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            84
+          ],
+          "transformationMatrix": [
+            18.0,
+            0,
+            0,
+            0,
+            0,
+            12.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Cinema_Auditorium_4": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Cinema Auditoriums",
+        "element_type": "room",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          18.0,
+          12.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            85
+          ],
+          "transformationMatrix": [
+            18.0,
+            0,
+            0,
+            0,
+            0,
+            12.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Cinema_Foyer_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Cinema Foyer and Concessions",
+        "element_type": "room",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          25.0,
+          12.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            86
+          ],
+          "transformationMatrix": [
+            25.0,
+            0,
+            0,
+            0,
+            0,
+            12.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_3F_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Third Floor Restrooms",
+        "element_type": "room",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            87
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_3F_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Third Floor Restrooms",
+        "element_type": "room",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            88
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Restroom_3F_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Third Floor Restrooms",
+        "element_type": "room",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          5.0,
+          4.0,
+          4.57
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            89
+          ],
+          "transformationMatrix": [
+            5.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            4.57,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Flat_Roof_Slab_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Flat Roof Slab",
+        "element_type": "roof",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          60.96,
+          36.58,
+          0.3
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            90
+          ],
+          "transformationMatrix": [
+            60.96,
+            0,
+            0,
+            0,
+            0,
+            36.58,
+            0,
+            0,
+            0,
+            0,
+            0.3,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  7,
+                  7,
+                  7,
+                  7,
+                  7,
+                  7
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Atrium_Skylight_1": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Central Atrium Skylight",
+        "element_type": "window",
+        "storey": "Third Floor",
+        "dimensions_m": [
+          20.0,
+          10.0,
+          1.5
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            91
+          ],
+          "transformationMatrix": [
+            20.0,
+            0,
+            0,
+            0,
+            0,
+            10.0,
+            0,
+            0,
+            0,
+            0,
+            1.5,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Drop_Off_Canopy_1": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Front Drop-Off Canopy and Landscaping",
+        "element_type": "other",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          20.0,
+          8.0,
+          4.0
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            92
+          ],
+          "transformationMatrix": [
+            20.0,
+            0,
+            0,
+            0,
+            0,
+            8.0,
+            0,
+            0,
+            0,
+            0,
+            4.0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "vertices": [
+    [
+      0.0,
+      0.0,
+      -4.57
+    ],
+    [
+      5.0,
+      5.0,
+      -4.57
+    ],
+    [
+      15.0,
+      5.0,
+      -4.57
+    ],
+    [
+      25.0,
+      5.0,
+      -4.57
+    ],
+    [
+      35.0,
+      5.0,
+      -4.57
+    ],
+    [
+      45.0,
+      5.0,
+      -4.57
+    ],
+    [
+      55.0,
+      5.0,
+      -4.57
+    ],
+    [
+      5.0,
+      14.0,
+      -4.57
+    ],
+    [
+      15.0,
+      14.0,
+      -4.57
+    ],
+    [
+      25.0,
+      14.0,
+      -4.57
+    ],
+    [
+      35.0,
+      14.0,
+      -4.57
+    ],
+    [
+      45.0,
+      14.0,
+      -4.57
+    ],
+    [
+      55.0,
+      14.0,
+      -4.57
+    ],
+    [
+      5.0,
+      22.0,
+      -4.57
+    ],
+    [
+      15.0,
+      22.0,
+      -4.57
+    ],
+    [
+      25.0,
+      22.0,
+      -4.57
+    ],
+    [
+      35.0,
+      22.0,
+      -4.57
+    ],
+    [
+      45.0,
+      22.0,
+      -4.57
+    ],
+    [
+      55.0,
+      22.0,
+      -4.57
+    ],
+    [
+      5.0,
+      31.0,
+      -4.57
+    ],
+    [
+      15.0,
+      31.0,
+      -4.57
+    ],
+    [
+      25.0,
+      31.0,
+      -4.57
+    ],
+    [
+      35.0,
+      31.0,
+      -4.57
+    ],
+    [
+      45.0,
+      31.0,
+      -4.57
+    ],
+    [
+      55.0,
+      31.0,
+      -4.57
+    ],
+    [
+      35.0,
+      30.0,
+      -4.57
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      36.28,
+      0.0
+    ],
+    [
+      0.3,
+      0.0,
+      0.0
+    ],
+    [
+      60.96,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      15.0,
+      0.0,
+      0.0
+    ],
+    [
+      19.0,
+      0.0,
+      0.0
+    ],
+    [
+      5.0,
+      12.0,
+      0.0
+    ],
+    [
+      5.0,
+      1.0,
+      0.0
+    ],
+    [
+      13.5,
+      1.0,
+      0.0
+    ],
+    [
+      22.0,
+      1.0,
+      0.0
+    ],
+    [
+      30.5,
+      1.0,
+      0.0
+    ],
+    [
+      39.0,
+      1.0,
+      0.0
+    ],
+    [
+      47.5,
+      1.0,
+      0.0
+    ],
+    [
+      5.0,
+      25.0,
+      0.0
+    ],
+    [
+      13.5,
+      25.0,
+      0.0
+    ],
+    [
+      22.0,
+      25.0,
+      0.0
+    ],
+    [
+      30.5,
+      25.0,
+      0.0
+    ],
+    [
+      39.0,
+      25.0,
+      0.0
+    ],
+    [
+      47.5,
+      25.0,
+      0.0
+    ],
+    [
+      8.0,
+      11.0,
+      0.0
+    ],
+    [
+      16.5,
+      11.0,
+      0.0
+    ],
+    [
+      25.0,
+      11.0,
+      0.0
+    ],
+    [
+      33.5,
+      11.0,
+      0.0
+    ],
+    [
+      42.0,
+      11.0,
+      0.0
+    ],
+    [
+      50.5,
+      11.0,
+      0.0
+    ],
+    [
+      8.0,
+      24.92,
+      0.0
+    ],
+    [
+      16.5,
+      24.92,
+      0.0
+    ],
+    [
+      25.0,
+      24.92,
+      0.0
+    ],
+    [
+      33.5,
+      24.92,
+      0.0
+    ],
+    [
+      42.0,
+      24.92,
+      0.0
+    ],
+    [
+      50.5,
+      24.92,
+      0.0
+    ],
+    [
+      48.0,
+      28.0,
+      0.0
+    ],
+    [
+      55.0,
+      36.2,
+      0.0
+    ],
+    [
+      0.5,
+      12.0,
+      0.0
+    ],
+    [
+      0.5,
+      16.5,
+      0.0
+    ],
+    [
+      0.5,
+      21.0,
+      0.0
+    ],
+    [
+      23.0,
+      15.0,
+      0.0
+    ],
+    [
+      23.0,
+      17.0,
+      0.0
+    ],
+    [
+      28.0,
+      24.0,
+      0.0
+    ],
+    [
+      31.0,
+      24.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      4.57
+    ],
+    [
+      5.0,
+      5.0,
+      4.57
+    ],
+    [
+      42.0,
+      5.0,
+      4.57
+    ],
+    [
+      42.0,
+      10.0,
+      4.57
+    ],
+    [
+      42.0,
+      15.0,
+      4.57
+    ],
+    [
+      42.0,
+      20.0,
+      4.57
+    ],
+    [
+      48.0,
+      5.0,
+      4.57
+    ],
+    [
+      48.0,
+      10.0,
+      4.57
+    ],
+    [
+      48.0,
+      15.0,
+      4.57
+    ],
+    [
+      48.0,
+      20.0,
+      4.57
+    ],
+    [
+      10.0,
+      26.0,
+      4.57
+    ],
+    [
+      0.5,
+      12.0,
+      4.57
+    ],
+    [
+      0.5,
+      16.5,
+      4.57
+    ],
+    [
+      0.5,
+      21.0,
+      4.57
+    ],
+    [
+      0.0,
+      0.0,
+      9.14
+    ],
+    [
+      2.0,
+      2.0,
+      9.14
+    ],
+    [
+      22.0,
+      2.0,
+      9.14
+    ],
+    [
+      2.0,
+      18.0,
+      9.14
+    ],
+    [
+      22.0,
+      18.0,
+      9.14
+    ],
+    [
+      42.0,
+      8.0,
+      9.14
+    ],
+    [
+      0.5,
+      12.0,
+      9.14
+    ],
+    [
+      0.5,
+      16.5,
+      9.14
+    ],
+    [
+      0.5,
+      21.0,
+      9.14
+    ],
+    [
+      0.0,
+      0.0,
+      13.71
+    ],
+    [
+      20.0,
+      13.0,
+      13.71
+    ],
+    [
+      8.0,
+      -8.0,
+      0.0
+    ]
+  ],
+  "geometry-templates": {
+    "templates": [
+      {
+        "type": "Solid",
+        "lod": "1",
+        "boundaries": [
+          [
+            [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                4,
+                7,
+                6,
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                4,
+                5,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                5,
+                6,
+                2
+              ]
+            ],
+            [
+              [
+                2,
+                6,
+                7,
+                3
+              ]
+            ],
+            [
+              [
+                3,
+                7,
+                4,
+                0
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "Solid",
+        "lod": "2.0",
+        "boundaries": [
+          [
+            [
+              [
+                8,
+                11,
+                10,
+                9
+              ]
+            ],
+            [
+              [
+                8,
+                9,
+                13,
+                12
+              ]
+            ],
+            [
+              [
+                11,
+                12,
+                13,
+                10
+              ]
+            ],
+            [
+              [
+                8,
+                12,
+                11
+              ]
+            ],
+            [
+              [
+                9,
+                10,
+                13
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "Solid",
+        "lod": "1",
+        "boundaries": [
+          [
+            [
+              [
+                14,
+                17,
+                16,
+                15
+              ]
+            ],
+            [
+              [
+                14,
+                15,
+                18
+              ]
+            ],
+            [
+              [
+                17,
+                19,
+                16
+              ]
+            ],
+            [
+              [
+                15,
+                16,
+                19,
+                18
+              ]
+            ],
+            [
+              [
+                14,
+                18,
+                19,
+                17
+              ]
+            ]
+          ]
+        ]
+      }
+    ],
+    "vertices-templates": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0.5,
+        1
+      ],
+      [
+        1,
+        0.5,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "appearance": {
+    "materials": [
+      {
+        "name": "Slab - Concrete",
+        "diffuseColor": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Column - Concrete",
+        "diffuseColor": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Generic Element",
+        "diffuseColor": [
+          0.7,
+          0.7,
+          0.7
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Wall - Light Cream",
+        "diffuseColor": [
+          0.96,
+          0.91,
+          0.8
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Door - Brown",
+        "diffuseColor": [
+          0.4,
+          0.26,
+          0.13
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Room Volume",
+        "diffuseColor": [
+          0.9,
+          0.95,
+          0.85
+        ],
+        "transparency": 0.75
+      },
+      {
+        "name": "Staircase - Light Grey",
+        "diffuseColor": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Roof - Dark Grey Tile",
+        "diffuseColor": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Window - Glass",
+        "diffuseColor": [
+          0.75,
+          0.88,
+          0.95
+        ],
+        "transparency": 0.35
+      }
+    ]
+  }
+}

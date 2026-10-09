@@ -21,6 +21,9 @@ FastAPI service that loads the public base model `HuggingFaceTB/SmolLM2-360M-Ins
 - `POST /ifc/generate` — text to IFC, using walls and slabs from the model JSON
 - `POST /ifc/generate-from-json` — flat `BuildingPlan` JSON to IFC
 - `GET /ifc/download` — latest IFC file
+- `POST /doc/generate-ifc` — upload a `.txt`/`.md`/`.pdf` doc; Gemini summarizes the requested \
+building program, Gemini writes it as CityJSON, and `cityjson_to_ifc.py` converts that to IFC. \
+Requires `GEMINI_API_KEY` (optional `GEMINI_MODEL`, defaults to `gemini-2.5-flash`).
 
 The free CPU Space sleeps when idle. The first request after sleep waits while the weights load.
 

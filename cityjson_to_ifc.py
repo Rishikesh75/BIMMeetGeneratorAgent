@@ -192,7 +192,7 @@ def add_geometry(
             verts, boundaries, inner_type = instance_geometry(
                 geom, vertices, templates, template_vertices
             )
-            mat_values = None
+            mat_values = geometry_material_values(geom)
         else:
             verts, boundaries, inner_type = vertices, geom.get("boundaries", []), gtype
             mat_values = geometry_material_values(geom)

@@ -1,0 +1,2511 @@
+{
+  "type": "CityJSON",
+  "version": "1.1",
+  "metadata": {
+    "title": "Basic Two-Story House",
+    "presentLoD": "2.0"
+  },
+  "transform": {
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "translate": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "CityObjects": {
+    "Building1": {
+      "type": "Building",
+      "attributes": {
+        "name": "Basic Two-Story House",
+        "building_type": "residential"
+      },
+      "children": [
+        "GroundFloorSlab",
+        "ExteriorWall_GF_Front",
+        "ExteriorWall_GF_Rear",
+        "ExteriorWall_GF_Left",
+        "ExteriorWall_GF_Right",
+        "InteriorWall_GF_1",
+        "InteriorWall_GF_2",
+        "LivingRoom",
+        "Bedroom",
+        "Kitchen",
+        "MainEntranceDoor",
+        "InteriorBedroomDoor",
+        "KitchenDoorway",
+        "FrontWindow_1",
+        "FrontWindow_2",
+        "SideWindow_1",
+        "SideWindow_2",
+        "InteriorStaircase",
+        "FrontPorchSlab",
+        "PorchColumn_1",
+        "PorchColumn_2",
+        "PorchSteps",
+        "EntrancePathway",
+        "FirstFloorSlab",
+        "ExteriorWall_FF_Front",
+        "ExteriorWall_FF_Rear",
+        "ExteriorWall_FF_Left",
+        "ExteriorWall_FF_Right",
+        "BalconySlab",
+        "BalconyDoor",
+        "UpperFloorWindow_1",
+        "UpperFloorWindow_2",
+        "UpperFloorWindow_3",
+        "SlopedRoof"
+      ]
+    },
+    "GroundFloorSlab": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Ground Floor Slab",
+        "element_type": "slab",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          9.14,
+          6.1,
+          0.15
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            0
+          ],
+          "transformationMatrix": [
+            9.14,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            6.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.15,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ExteriorWall_GF_Front": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Walls - Ground Floor Front",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          9.14,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            1
+          ],
+          "transformationMatrix": [
+            9.14,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ExteriorWall_GF_Rear": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Walls - Ground Floor Rear",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          9.14,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            2
+          ],
+          "transformationMatrix": [
+            9.14,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ExteriorWall_GF_Left": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Walls - Ground Floor Left",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          6.1,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            3
+          ],
+          "transformationMatrix": [
+            0.0,
+            -0.2,
+            0.0,
+            0.0,
+            6.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ExteriorWall_GF_Right": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Walls - Ground Floor Right",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          6.1,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            4
+          ],
+          "transformationMatrix": [
+            0.0,
+            -0.2,
+            0.0,
+            0.0,
+            6.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "InteriorWall_GF_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Interior Partition Wall Longitudinal",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          6.1,
+          0.15,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            5
+          ],
+          "transformationMatrix": [
+            0.0,
+            -0.15,
+            0.0,
+            0.0,
+            6.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "InteriorWall_GF_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Interior Partition Wall Transverse",
+        "element_type": "wall",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          4.37,
+          0.15,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            6
+          ],
+          "transformationMatrix": [
+            4.37,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.15,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "LivingRoom": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Living Room",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          4.37,
+          3.3,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            7
+          ],
+          "transformationMatrix": [
+            4.37,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.3,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Bedroom": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Bedroom",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          4.37,
+          2.3,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            8
+          ],
+          "transformationMatrix": [
+            4.37,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.3,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Kitchen": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Kitchen",
+        "element_type": "room",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          4.37,
+          5.7,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            9
+          ],
+          "transformationMatrix": [
+            4.37,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            5.7,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  2,
+                  2,
+                  2,
+                  2,
+                  2,
+                  2
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "MainEntranceDoor": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Main Entrance Door",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          0.91,
+          0.08,
+          2.13
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            10
+          ],
+          "transformationMatrix": [
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.13,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "InteriorBedroomDoor": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Interior Bedroom Door",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          0.85,
+          0.08,
+          2.1
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            11
+          ],
+          "transformationMatrix": [
+            0.85,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "KitchenDoorway": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Kitchen Doorway",
+        "element_type": "door",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          0.08,
+          0.9,
+          2.1
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            12
+          ],
+          "transformationMatrix": [
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.9,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "FrontWindow_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Front Windows - Left",
+        "element_type": "window",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.22,
+          0.08,
+          0.91
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            13
+          ],
+          "transformationMatrix": [
+            1.22,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "FrontWindow_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Front Windows - Right",
+        "element_type": "window",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.22,
+          0.08,
+          0.91
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            14
+          ],
+          "transformationMatrix": [
+            1.22,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "SideWindow_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Side Windows - West",
+        "element_type": "window",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          0.08,
+          1.22,
+          0.91
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            15
+          ],
+          "transformationMatrix": [
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.22,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "SideWindow_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Side Windows - East",
+        "element_type": "window",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          0.08,
+          1.22,
+          0.91
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            16
+          ],
+          "transformationMatrix": [
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.22,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "InteriorStaircase": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Interior Staircase",
+        "element_type": "stair",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          3.0,
+          1.0,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 2,
+          "boundaries": [
+            17
+          ],
+          "transformationMatrix": [
+            3.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "FrontPorchSlab": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Front Porch Slab",
+        "element_type": "slab",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          2.5,
+          1.5,
+          0.15
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            18
+          ],
+          "transformationMatrix": [
+            2.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.15,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "PorchColumn_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Porch Supporting Column Left",
+        "element_type": "column",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          0.2,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            19
+          ],
+          "transformationMatrix": [
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  6,
+                  6,
+                  6,
+                  6,
+                  6,
+                  6
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "PorchColumn_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Porch Supporting Column Right",
+        "element_type": "column",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          0.2,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            20
+          ],
+          "transformationMatrix": [
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  6,
+                  6,
+                  6,
+                  6,
+                  6,
+                  6
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "PorchSteps": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Porch Steps",
+        "element_type": "stair",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.5,
+          0.9,
+          0.45
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 2,
+          "boundaries": [
+            21
+          ],
+          "transformationMatrix": [
+            1.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.9,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.45,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  5,
+                  5,
+                  5,
+                  5,
+                  5
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "EntrancePathway": {
+      "type": "BuildingInstallation",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Entrance Pathway",
+        "element_type": "other",
+        "storey": "Ground Floor",
+        "dimensions_m": [
+          1.0,
+          4.0,
+          0.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            22
+          ],
+          "transformationMatrix": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  7,
+                  7,
+                  7,
+                  7,
+                  7,
+                  7
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "FirstFloorSlab": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "First Floor Intermediate Slab",
+        "element_type": "slab",
+        "storey": "First Floor",
+        "dimensions_m": [
+          9.14,
+          6.1,
+          0.2
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            23
+          ],
+          "transformationMatrix": [
+            9.14,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            6.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ExteriorWall_FF_Front": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Walls - First Floor Front",
+        "element_type": "wall",
+        "storey": "First Floor",
+        "dimensions_m": [
+          9.14,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            24
+          ],
+          "transformationMatrix": [
+            9.14,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ExteriorWall_FF_Rear": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Walls - First Floor Rear",
+        "element_type": "wall",
+        "storey": "First Floor",
+        "dimensions_m": [
+          9.14,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            25
+          ],
+          "transformationMatrix": [
+            9.14,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ExteriorWall_FF_Left": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Walls - First Floor Left",
+        "element_type": "wall",
+        "storey": "First Floor",
+        "dimensions_m": [
+          6.1,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            26
+          ],
+          "transformationMatrix": [
+            0.0,
+            -0.2,
+            0.0,
+            0.0,
+            6.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ExteriorWall_FF_Right": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Exterior Walls - First Floor Right",
+        "element_type": "wall",
+        "storey": "First Floor",
+        "dimensions_m": [
+          6.1,
+          0.2,
+          3.05
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            27
+          ],
+          "transformationMatrix": [
+            0.0,
+            -0.2,
+            0.0,
+            0.0,
+            6.1,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "BalconySlab": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Balcony Slab",
+        "element_type": "slab",
+        "storey": "First Floor",
+        "dimensions_m": [
+          2.5,
+          1.2,
+          0.15
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            28
+          ],
+          "transformationMatrix": [
+            2.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.15,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "BalconyDoor": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Balcony Door",
+        "element_type": "door",
+        "storey": "First Floor",
+        "dimensions_m": [
+          0.91,
+          0.08,
+          2.13
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            29
+          ],
+          "transformationMatrix": [
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.13,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  3,
+                  3,
+                  3,
+                  3,
+                  3,
+                  3
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "UpperFloorWindow_1": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Upper Floor Window 1",
+        "element_type": "window",
+        "storey": "First Floor",
+        "dimensions_m": [
+          1.22,
+          0.08,
+          0.91
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            30
+          ],
+          "transformationMatrix": [
+            1.22,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "UpperFloorWindow_2": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Upper Floor Window 2",
+        "element_type": "window",
+        "storey": "First Floor",
+        "dimensions_m": [
+          1.22,
+          0.08,
+          0.91
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            31
+          ],
+          "transformationMatrix": [
+            1.22,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "UpperFloorWindow_3": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Upper Floor Window 3",
+        "element_type": "window",
+        "storey": "First Floor",
+        "dimensions_m": [
+          1.22,
+          0.08,
+          0.91
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 0,
+          "boundaries": [
+            32
+          ],
+          "transformationMatrix": [
+            1.22,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.08,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.91,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  4,
+                  4,
+                  4,
+                  4,
+                  4,
+                  4
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "SlopedRoof": {
+      "type": "BuildingPart",
+      "parents": [
+        "Building1"
+      ],
+      "attributes": {
+        "name": "Sloped Roof",
+        "element_type": "roof",
+        "storey": "First Floor",
+        "dimensions_m": [
+          9.5,
+          6.5,
+          1.8
+        ]
+      },
+      "geometry": [
+        {
+          "type": "GeometryInstance",
+          "template": 1,
+          "boundaries": [
+            33
+          ],
+          "transformationMatrix": [
+            9.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            6.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.8,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": {
+            "default": {
+              "values": [
+                [
+                  8,
+                  8,
+                  8,
+                  8,
+                  8
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "vertices": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      5.9,
+      0.0
+    ],
+    [
+      0.2,
+      0.0,
+      0.0
+    ],
+    [
+      9.14,
+      0.0,
+      0.0
+    ],
+    [
+      4.57,
+      0.0,
+      0.0
+    ],
+    [
+      0.2,
+      3.5,
+      0.0
+    ],
+    [
+      0.2,
+      0.2,
+      0.0
+    ],
+    [
+      0.2,
+      3.65,
+      0.0
+    ],
+    [
+      4.72,
+      0.2,
+      0.0
+    ],
+    [
+      1.8,
+      -0.01,
+      0.0
+    ],
+    [
+      2.0,
+      3.46,
+      0.0
+    ],
+    [
+      4.53,
+      1.5,
+      0.0
+    ],
+    [
+      0.4,
+      -0.01,
+      0.91
+    ],
+    [
+      3.0,
+      -0.01,
+      0.91
+    ],
+    [
+      -0.01,
+      2.5,
+      0.91
+    ],
+    [
+      9.07,
+      2.5,
+      0.91
+    ],
+    [
+      3.5,
+      1.0,
+      0.0
+    ],
+    [
+      1.5,
+      -1.5,
+      0.0
+    ],
+    [
+      1.5,
+      -1.5,
+      0.0
+    ],
+    [
+      3.8,
+      -1.5,
+      0.0
+    ],
+    [
+      2.0,
+      -2.4,
+      0.0
+    ],
+    [
+      2.25,
+      -6.4,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      3.05
+    ],
+    [
+      0.0,
+      0.0,
+      3.05
+    ],
+    [
+      0.0,
+      5.9,
+      3.05
+    ],
+    [
+      0.2,
+      0.0,
+      3.05
+    ],
+    [
+      9.14,
+      0.0,
+      3.05
+    ],
+    [
+      1.5,
+      -1.2,
+      3.05
+    ],
+    [
+      1.8,
+      -0.01,
+      3.05
+    ],
+    [
+      0.4,
+      -0.01,
+      3.96
+    ],
+    [
+      3.0,
+      -0.01,
+      3.96
+    ],
+    [
+      6.0,
+      -0.01,
+      3.96
+    ],
+    [
+      -0.18,
+      -0.2,
+      6.1
+    ]
+  ],
+  "geometry-templates": {
+    "templates": [
+      {
+        "type": "Solid",
+        "lod": "1",
+        "boundaries": [
+          [
+            [
+              [
+                0,
+                1,
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                4,
+                7,
+                6,
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                4,
+                5,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                5,
+                6,
+                2
+              ]
+            ],
+            [
+              [
+                2,
+                6,
+                7,
+                3
+              ]
+            ],
+            [
+              [
+                3,
+                7,
+                4,
+                0
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "Solid",
+        "lod": "2.0",
+        "boundaries": [
+          [
+            [
+              [
+                8,
+                11,
+                10,
+                9
+              ]
+            ],
+            [
+              [
+                8,
+                9,
+                13,
+                12
+              ]
+            ],
+            [
+              [
+                11,
+                12,
+                13,
+                10
+              ]
+            ],
+            [
+              [
+                8,
+                12,
+                11
+              ]
+            ],
+            [
+              [
+                9,
+                10,
+                13
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "Solid",
+        "lod": "1",
+        "boundaries": [
+          [
+            [
+              [
+                14,
+                17,
+                16,
+                15
+              ]
+            ],
+            [
+              [
+                14,
+                15,
+                18
+              ]
+            ],
+            [
+              [
+                17,
+                19,
+                16
+              ]
+            ],
+            [
+              [
+                15,
+                16,
+                19,
+                18
+              ]
+            ],
+            [
+              [
+                14,
+                18,
+                19,
+                17
+              ]
+            ]
+          ]
+        ]
+      }
+    ],
+    "vertices-templates": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0.5,
+        1
+      ],
+      [
+        1,
+        0.5,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "appearance": {
+    "materials": [
+      {
+        "name": "Slab - Concrete",
+        "diffuseColor": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Wall - Light Cream",
+        "diffuseColor": [
+          0.96,
+          0.91,
+          0.8
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Room Volume",
+        "diffuseColor": [
+          0.9,
+          0.95,
+          0.85
+        ],
+        "transparency": 0.75
+      },
+      {
+        "name": "Door - Brown",
+        "diffuseColor": [
+          0.4,
+          0.26,
+          0.13
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Window - Glass",
+        "diffuseColor": [
+          0.75,
+          0.88,
+          0.95
+        ],
+        "transparency": 0.35
+      },
+      {
+        "name": "Staircase - Light Grey",
+        "diffuseColor": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Column - Concrete",
+        "diffuseColor": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Generic Element",
+        "diffuseColor": [
+          0.7,
+          0.7,
+          0.7
+        ],
+        "transparency": 0.0
+      },
+      {
+        "name": "Roof - Dark Grey Tile",
+        "diffuseColor": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "transparency": 0.0
+      }
+    ]
+  }
+}
