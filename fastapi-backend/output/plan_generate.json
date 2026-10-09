@@ -1,0 +1,107 @@
+{
+  "name": "Office Block",
+  "building_type": "office",
+  "floors": 2,
+  "elements": [
+    {
+      "type": "slab",
+      "name": "Ground Floor Slab",
+      "floor": 1,
+      "width_m": 10.0,
+      "depth_m": 10.0,
+      "thickness_m": 0.25,
+      "position": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "rotation_deg": 0.0
+    },
+    {
+      "type": "wall",
+      "name": "Ground Floor North Wall",
+      "floor": 1,
+      "length_m": 10.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "position": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "rotation_deg": 0.0
+    },
+    {
+      "type": "wall",
+      "name": "Ground Floor South Wall",
+      "floor": 1,
+      "length_m": 10.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "position": { "x": 0.0, "y": 10.0, "z": 0.0 },
+      "rotation_deg": 0.0
+    },
+    {
+      "type": "wall",
+      "name": "Ground Floor East Wall",
+      "floor": 1,
+      "length_m": 10.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "position": { "x": 10.0, "y": 0.0, "z": 0.0 },
+      "rotation_deg": 90.0
+    },
+    {
+      "type": "wall",
+      "name": "Ground Floor West Wall",
+      "floor": 1,
+      "length_m": 10.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "position": { "x": 0.0, "y": 0.0, "z": 0.0 },
+      "rotation_deg": 90.0
+    },
+    {
+      "type": "slab",
+      "name": "Second Storey Slab",
+      "floor": 2,
+      "width_m": 10.0,
+      "depth_m": 10.0,
+      "thickness_m": 0.25,
+      "position": { "x": 0.0, "y": 0.0, "z": 3.0 },
+      "rotation_deg": 0.0
+    },
+    {
+      "type": "wall",
+      "name": "Second Storey North Wall",
+      "floor": 2,
+      "length_m": 10.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "position": { "x": 0.0, "y": 0.0, "z": 3.0 },
+      "rotation_deg": 0.0
+    },
+    {
+      "type": "wall",
+      "name": "Second Storey South Wall",
+      "floor": 2,
+      "length_m": 10.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "position": { "x": 0.0, "y": 10.0, "z": 3.0 },
+      "rotation_deg": 0.0
+    },
+    {
+      "type": "wall",
+      "name": "Second Storey East Wall",
+      "floor": 2,
+      "length_m": 10.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "position": { "x": 10.0, "y": 0.0, "z": 3.0 },
+      "rotation_deg": 90.0
+    },
+    {
+      "type": "wall",
+      "name": "Second Storey West Wall",
+      "floor": 2,
+      "length_m": 10.0,
+      "height_m": 3.0,
+      "thickness_m": 0.2,
+      "position": { "x": 0.0, "y": 0.0, "z": 3.0 },
+      "rotation_deg": 90.0
+    }
+  ]
+}

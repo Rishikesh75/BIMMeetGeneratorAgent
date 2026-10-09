@@ -1,0 +1,22 @@
+{
+    "project": "Project1",
+    "site": "Site1",
+    "building": "Building1",
+    "storeys": [
+      { "storey": "Storey1", "height": 3, "width": 10 },
+      { "storey": "Storey2", "height": 3, "width": 10 }
+    ],
+    "elements": [
+      { "element": "Wall1", "material": "StandardMaterial1", "storey": "Storey1", "height": 3, "width": 10 },
+      { "element": "Wall2", "material": "StandardMaterial2", "storey": "Storey2", "height": 3, "width": 10 }
+    ],
+    "materials": [
+      { "material": "StandardMaterial1", "storey": "Storey1", "height": 3, "width": 10 },
+      { "material": "StandardMaterial2", "storey": "Storey2", "height": 3, "width": 10 }
+    ],
+    "relationships": [
+      { "storey": "Storey1", "storey_id": "storey1", "material": "StandardMaterial1" },
+      { "storey": "Storey2", "storey_id": "storey2", "material": "StandardMaterial2" }
+    ],
+    "metadata": { "height": 3, "width": 10, "storey_id": "storey1" }
+}
