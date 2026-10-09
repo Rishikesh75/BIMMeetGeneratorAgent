@@ -1,3 +1,5 @@
+from typing import Any
+
 from pydantic import BaseModel, Field
 
 from bim_ifc_builder import BuildingPlan
@@ -18,6 +20,13 @@ class JsonToIfcResponse(BaseModel):
     file_name: str
     output_path: str
     element_count: int
+
+
+class PlanGenerateResponse(BaseModel):
+    valid_json: bool
+    valid_structure: bool
+    plan: dict[str, Any] | None = None
+    raw_text: str | None = None
 
 
 # Re-export the shared schema used by both text and JSON routes.

@@ -77,6 +77,19 @@ The API accepts a `BuildingPlan` object with this shape:
 
 ## API endpoints
 
+- `GET /health`
+  - Reports whether the published LoRA adapter finished loading
+
+- `POST /plan/generate`
+  - Sends a text description to `Rishi74518/smollm2-360m-bim-lora` on top of `HuggingFaceTB/SmolLM2-360M-Instruct`
+  - Returns hierarchical BIM JSON plus `valid_json` and `valid_structure`
+  - Invalid model JSON returns 422 with the raw text
+
+- `POST /ifc/generate`
+  - Uses the same model, maps walls and slabs into a `BuildingPlan`, and writes an IFC file
+  - Other element types are skipped because the builder currently creates walls and slabs
+  - Unmappable model JSON returns 422 and does not use the rules-based text stub
+
 - `POST /ifc/generate-from-json`
   - Accepts a `BuildingPlan` JSON payload
   - Generates `generated_model.ifc`
@@ -92,8 +105,11 @@ The API accepts a `BuildingPlan` object with this shape:
 
 ```bash
 cd fastapi-backend
+python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 ```
+
+Startup downloads the public base model and the LoRA adapter before the server accepts requests. If that download fails, the process still starts and `GET /health` reports the error. Set `BIM_ADAPTER_PATH` to a local adapter folder to skip the Hub download.
 
 3. Start the server:
 
@@ -102,7 +118,9 @@ cd fastapi-backend
 uvicorn app.main:app --reload
 ```
 
-4. Send JSON payloads to `http://127.0.0.1:8000/ifc/generate-from-json`.
+4. Send text to `http://127.0.0.1:8000/plan/generate` or JSON payloads to `http://127.0.0.1:8000/ifc/generate-from-json`.
+
+The same app can run later as a free Hugging Face Docker Space. [`fastapi-backend/Dockerfile`](fastapi-backend/Dockerfile) listens on port 7860 and sets `BIM_ADAPTER_ID=Rishi74518/smollm2-360m-bim-lora`.
 
 ## Sample files
 

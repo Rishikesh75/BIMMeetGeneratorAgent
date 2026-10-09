@@ -13,10 +13,10 @@ def _extract_dimension(pattern: str, text: str, default: float) -> float:
 
 
 def text_to_building_plan(description: str) -> BuildingPlan:
-    """Convert natural language into a structured building plan.
+    """Convert natural language into a structured building plan with rules.
 
-    This is a lightweight rules-based stub that will later be replaced by an ML/LLM
-    text-to-JSON model. It extracts a few common cues and falls back to defaults.
+    POST /ifc/generate uses the published LoRA model instead of this function.
+    Scripts and tests can still call this stub directly.
     """
     cleaned = (description or "Generated BIM model").strip() or "Generated BIM model"
     project_name = cleaned[:80]
