@@ -56,13 +56,35 @@ Output exactly one JSON object and nothing else, matching this shape:
 
 Rules:
 - Always include at least one storey (default "Storey1", elevation_m 0, height_m 3 if unstated).
-- Always include at least the walls and a ground slab implied by "build a house" even if the \
-document only states it briefly.
-- If the document mentions stairs, add one "stair" element connecting the storeys it is for.
-- Invent reasonable residential dimensions in meters when the document gives none \
-(wall height_m 3, wall length_m 5, slab width/length 5, stair length_m 3, stair width_m 1, \
-stair height_m equal to the storey height it climbs).
-- Never invent elements the document does not imply.
+- Treat every storey as needing a complete structural envelope, no matter how little the document \
+says about that particular floor: emit exactly one "slab" element covering that storey's full \
+footprint, plus exactly four "wall" elements named "<storey> Front Wall", "<storey> Rear Wall", \
+"<storey> Left Wall", and "<storey> Right Wall" (quantity 1 each - never bundle the four into one \
+element with quantity 4) that enclose that same footprint. Add these even for storeys the \
+document only describes through their interior contents (shops, food court, cinema, parking, \
+offices, play areas, etc.) - a storey with rooms, columns, or furniture but no enclosing walls is \
+an incomplete model and must never be the output, since every real storey is bounded on all four \
+sides. Reuse the building's overall footprint (length_m/width_m) for every storey's slab and \
+walls unless the document states a different size for that specific storey.
+- Always emit exactly one "roof" element on the topmost storey, even if the document never \
+mentions a roof - a building is not a closed volume without one.
+- Infer each wall's or roof's finish from the closest matching description in the document (e.g. \
+"glass panels at the front" -> the front wall's notes say "glazed curtain wall"; "concrete walls \
+on the sides" -> the left/right walls' notes say "concrete"). When nothing in the document \
+describes a given side's finish, default its notes to whichever finish is used elsewhere on the \
+building, or "plain painted finish" if none is given anywhere - never leave a mandatory wall/roof \
+without at least a default finish.
+- If the document mentions stairs, escalators, elevators, or ramps connecting storeys, add one \
+"stair" element per such connector (this is the closest schema type for any vertical circulation \
+element - name it after what it actually is, e.g. "Escalator Up", "Passenger Elevator", "Parking \
+Ramp") linking the storeys it serves.
+- Invent reasonable dimensions in meters when the document gives none, scaled to the building's \
+stated size when one is given (wall height_m = that storey's height_m, wall width_m 0.2, slab \
+length_m/width_m = the building's overall footprint or 5x5 if no size is stated anywhere, \
+stair/escalator/elevator/ramp length_m 3, width_m 1.5, height_m equal to the storey height it \
+climbs).
+- Beyond the mandatory envelope (slabs, walls, roof) and vertical connectors above, never invent \
+interior contents the document does not state or clearly imply.
 - Output JSON only, no Markdown fences, no commentary."""
 
 CITYJSON_SYSTEM_PROMPT = """You are a geometry writer that turns a structured building program into a \
@@ -140,23 +162,34 @@ the footprint depth, door/window width_m 0.08, column 0.25x0.25): \
 [length_m,0,0,0, 0,width_m,0,0, 0,0,height_m,0, 0,0,0,1].
 - Establish the storey footprint as (length_x, depth_y) from the slab/largest element's \
 length_m/width_m (default 5x5 if unstated). z for an element is its storey's elevation_m.
-- Front wall: anchor [0, 0, z]; matrix uses Lx=length_x, Wy=wall width_m. \
-Rear wall: anchor [0, depth_y - wall_width_m, z]; same matrix shape as the front wall. \
-Left wall: anchor [wall_width_m, 0, z]; matrix uses Lx=depth_y, Wy=-wall_width_m (so \
-transformationMatrix is [0,-wall_width_m,0,0, depth_y,0,0,0, 0,0,height_m,0, 0,0,0,1]). \
-Right wall: anchor [length_x, 0, z]; same matrix as the left wall. Interior partitions follow \
-whichever of these two patterns matches the direction the document implies, anchored so they do \
-not overlap other walls.
+- Every element typed "wall" MUST be placed using the direction named in its own "name" field \
+("Front Wall" / "Rear Wall" / "Left Wall" / "Right Wall" - the summarizer always names walls this \
+way). Match on those words, not on list order, and place every one of the four so the finished \
+storey is fully enclosed - never skip, merge, or stack more than one of them at the same anchor:
+  Front wall: anchor [0, 0, z]; matrix diag [length_x, wall_width_m, height_m].
+  Rear wall: anchor [0, depth_y - wall_width_m, z]; same matrix shape as the front wall.
+  Left wall: anchor [wall_width_m, 0, z]; matrix [0,-wall_width_m,0,0, depth_y,0,0,0, \
+0,0,height_m,0, 0,0,0,1].
+  Right wall: anchor [length_x, 0, z]; same matrix as the left wall.
+  Interior partitions follow whichever of these two matrix patterns matches the direction the \
+document implies, anchored so they do not overlap the four exterior walls above.
 - Ground slab / intermediate slab: template 0, anchor [0, 0, z], matrix diag [length_x, depth_y, \
 slab_height_m] (default 0.2).
-- Pitched roof: template 1, anchor [0, 0, z], matrix diag [length_x, depth_y, roof_height_m] \
-(default 1.5); this template already encodes the gable shape, so no rotation is needed.
+- Roof: anchor [0, 0, z]. If the document calls the roof "flat", use template 0 (box) with matrix \
+diag [length_x, depth_y, roof_height_m] (default 0.3, a thin slab). Otherwise use template 1 \
+(pitched gable, already shaped - no rotation needed) with matrix diag [length_x, depth_y, \
+roof_height_m] (default 1.5).
 - Door / window: template 0, anchor on the wall it belongs to at a reasonable offset along that \
 wall, matrix diag [length_m, 0.08, height_m].
 - Column: template 0, matrix diag [length_m or 0.25, width_m or 0.25, height_m].
-- Stair flight: template 2 (ramp), anchor at the flight's start point, matrix diag [length_m, \
-width_m, height_m] to climb along +X, or [0,-width_m,0,0, length_m,0,0,0, 0,0,height_m,0, \
-0,0,0,1] to climb along +Y when the program says the flight turns. A stair landing is template 0.
+- Stair flight (a sloped connector - a real staircase, escalator, or vehicle ramp): template 2 \
+(ramp), anchor at the flight's start point, matrix diag [length_m, width_m, height_m] to climb \
+along +X, or [0,-width_m,0,0, length_m,0,0,0, 0,0,height_m,0, 0,0,0,1] to climb along +Y when the \
+program says the flight turns. A stair landing is template 0.
+- Elevator (a vertical, non-sloped connector): template 0, anchor at its position on the lowest \
+storey it serves, matrix diag [length_m, width_m, total_height_m] where total_height_m spans \
+every storey it connects (sum of those storeys' height_m), not just one storey - it is a shaft, \
+not a ramp.
 - Room volume (element type "room"): template 0, matrix diag [length_m, width_m, height_m], \
 positioned inside the footprint without overlapping walls; always material index 8.
 - Other (paths, porch slabs, railings, steps): template 0; use material index 7 for anything \
